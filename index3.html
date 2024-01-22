@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Nomad</title>
+    <link href="https://fonts.cdnfonts.com/css/blacker-display" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="opening-page">
+        <h1>Welcome Digital Nomad</h1>
+    </div>
+
+    <div id="opening-action">
+        <h3>Click here to begin</h3>
+    </div>
+
+    <div id="question1" class="question-container hidden">
+        <h2>Where do you want to go?</h2>
+        <input type="text" id="answer1">
+        <button onclick="nextQuestion('question1', 'question2')">Next</button>
+    </div> 
+
+    <div id="question2" class="question-container hidden">
+        <h2>What job are you seeking?</h2>
+        <input type="text" id="answer2">
+        <button onclick="nextQuestion('question2', 'results')">Next</button>
+    </div>
+
+    <div id="results" class="question-container hidden">
+        <h2>Results Page</h2>
+        <!-- Display results content here -->
+    </div>
+
+    <script>
+
+        // Function to fade in an element
+        function fadeIn(elementId) {
+            var element = document.getElementById(elementId);
+            element.classList.remove('hidden');
+        }
+
+        // Function to fade out an element
+        function fadeOut(elementId) {
+            var element = document.getElementById(elementId);
+            element.classList.add('hidden');
+        }
+
+        // Function to move to the next question or results page
+        function nextQuestion(currentQuestion, nextQuestion) {
+            fadeOut(currentQuestion);
+            fadeIn(nextQuestion);
+        }
+
+        // Opening page to fade in
+        setTimeout(function() {
+            fadeIn('opening-page');
+        }, 0);
+
+        // After 2 seconds, then opening action to fade in
+        setTimeout(function() {
+            fadeIn('opening-action');
+        }, 2000);
+
+        // When opening action is clicked, opening page and opening action to fade out
+        document.getElementById('opening-action').addEventListener('click', function() {
+            fadeOut('opening-page');
+            fadeOut('opening-action');
+            fadeIn('question1');
+        });
+
+    </script>
+</body>
+</html>
