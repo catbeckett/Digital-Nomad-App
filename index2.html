@@ -1,0 +1,47 @@
+<!-- USED FOR TESTING -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    label {
+      font-weight: bold;
+      margin-top: 10px;
+      display: block;
+    }
+
+    input {
+      width: 200px;
+      padding: 5px;
+      margin: 10px 0;
+    }
+
+    #searchResult {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Country Search</h2>
+
+  <form onsubmit="return validateSearch()">
+    <label for="search">Search for a country:</label>
+    <input type="text" id="search" name="search" autocomplete="off">
+    <input type="submit" value="Search">
+  </form>
+
+  <div id="searchResult"></div>
+
+  <script src="script2.js"></script>
+
+</body>
+</html>

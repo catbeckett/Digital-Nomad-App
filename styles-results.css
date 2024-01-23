@@ -1,0 +1,87 @@
+@import url('https://fonts.cdnfonts.com/css/blacker-display');
+@import url('https://fonts.cdnfonts.com/css/br-shape?styles=170936,170930,170942,170932,170934,170938,170928,170926,170940');
+@import url('https://fonts.cdnfonts.com/css/rangile');
+
+body {
+    /* font-family: 'Blacker Display', sans-serif;
+    font-family: 'Blacker Text', sans-serif; */
+    background-color: #B2E1D7;
+};
+
+/* THIS COLOUR DOES NOT SEEM TO BE APPLYING TO THE CONTAINER */
+
+#job-container {
+    background-color: #07211B;
+    margin-bottom: 2vw;
+};
+
+#country-name {
+    font-size: 500%;
+}
+
+#overview-container {
+    height: 50vw;
+}
+
+#currency-container {
+    background-color: white;
+    height: 20vw;
+    margin-bottom: 2vw;
+}
+
+.base-currency {
+    color: #07211B;
+    background-color: #B2E1D7;
+}
+
+.converted-currency {
+    color: white;
+    background-color: #07211B;
+}
+
+.jobs-header {
+    color: white;
+}
+
+#jobs-title, #currency-convert-title {
+    color: #B2E1D7;
+}
+
+/* main {
+    margin-top: 6vw;
+} */
+
+#home-logo {
+    height: 2vw;
+}
+
+#custom-jumbo {
+    font-family: 'BR Shape', sans-serif;
+    /* font-weight: 170926 */
+    background-color: white;
+    height: 15vw;
+
+}
+
+
+#dn-icon-results {
+    width: 100%;
+}
+
+
+.currency-dropdown-wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.currency-conversion-wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: firebrick;
+}
+
+#history-button {
+    margin-top: 1vw;
+}
+
